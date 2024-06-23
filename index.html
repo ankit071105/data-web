@@ -72,8 +72,13 @@
                                  <a class="nav-link" href="#contact">Contact</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="#">Sign Up</a>
+                                 <a class="nav-link" href="sign.html">Sign Up</a>
                               </li>
+                            <li>
+                              <div class="toggle-container" id="mode-toggle">
+                        Dark Mode
+                            </li>
+                             </div>
                            </ul>
                         </div>
                      </nav>
@@ -82,6 +87,21 @@
             </div>
          </div>
       </header>
+      <script>
+         document.addEventListener('DOMContentLoaded', (event) => {
+             const toggleButton = document.getElementById('mode-toggle');
+             const body = document.body;
+     
+             toggleButton.addEventListener('click', () => {
+                 body.classList.toggle('dark-mode');
+                 if (body.classList.contains('dark-mode')) {
+                     toggleButton.textContent = 'Light Mode';
+                 } else {
+                     toggleButton.textContent = 'Dark Mode';
+                 }
+             });
+         });
+     </script>
       <!-- end header inner -->
       <!-- end header -->
       <!-- banner -->

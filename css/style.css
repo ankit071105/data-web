@@ -709,6 +709,22 @@ button {
      color: #0c0f38;
 }
 
-
+/* Dark mode styles */
+body.dark-mode {
+     background-color: #010305;
+     color: #ffffff;
+ }
+ 
+ body.dark-mode .header, 
+ body.dark-mode .footer, 
+ body.dark-mode .main-layout {
+     background-color: #100909;
+     color: #ffffff;
+ }
+ 
+ body.dark-mode a {
+     color: #bb86fc;
+ }
+ 
 /** end footer **/
 
